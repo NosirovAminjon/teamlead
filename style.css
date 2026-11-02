@@ -152,7 +152,7 @@
 }
 
 .ox{
-    border: 1px solid black;
+    border: 1px solid #E8E8E8;
     padding: 50px 40px;
     text-align: center;
     border-radius: 10px;
@@ -199,4 +199,18 @@
 }
 .oj{
     padding-right: 50px;
+}
+.sec4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #F6FCF9;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 1081px;
+    border-radius: 20px;
+}
+.lor{
+    padding-left: 30px;
 }
