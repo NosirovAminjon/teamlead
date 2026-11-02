@@ -253,3 +253,16 @@
 .sec5{
     padding-top: 100px;
 }
+.icons{
+    display: flex;
+    gap: 20px;
+}
+.ftr{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 100px;
+}
+.osd{
+    padding-top: 50px;
+}
