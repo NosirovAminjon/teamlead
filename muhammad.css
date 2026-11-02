@@ -1,0 +1,630 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #172126;
+  background: #f5f5f5;
+}
+
+.content {
+  max-width: 1150px;
+  margin: auto;
+  padding: 30px 60px;
+  background: white;
+}
+
+.head {
+  max-width: 1150px;
+  margin: auto;
+  padding: 25px 60px;
+  background: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  font-size: 13px;
+}
+
+.btn {
+  position: absolute;
+  right: 20px;
+  background: #36ad80;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 45px 35px 100px;
+}
+
+.pic {
+  width: 48%;
+  height: 330px;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info {
+  width: 48%;
+}
+
+.green {
+  color: #36ad80;
+  font-size: 12px;
+}
+
+.info h2 {
+  font-size: 26px;
+  margin: 12px 0;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.rate p,
+.price p {
+  color: goldenrod;
+  letter-spacing: 3px;
+}
+
+.rate h4 {
+  font-size: 15px;
+}
+
+.desc {
+  font-size: 12px;
+  line-height: 19px;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.info .btn {
+  float: right;
+}
+
+.review {
+  position: absolute;
+  left: 35px;
+  bottom: 40px;
+  width: 230px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px #0002;
+}
+
+.review img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.review h4 {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.review p {
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.review small {
+  font-size: 11px;
+  line-height: 16px;
+  color: #777;
+}
+
+.small {
+  position: absolute;
+  left: 290px;
+  bottom: 50px;
+  display: flex;
+  gap: 15px;
+}
+
+.small img {
+  width: 110px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.popular {
+  padding: 40px 0;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.top h2 {
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+
+.top p {
+  font-size: 13px;
+  color: #888;
+  line-height: 20px;
+}
+
+.view {
+  background: #eaf7f1;
+  color: #36ad80;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 33.33%;
+  background: #fafafa;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-info h3 {
+  font-size: 16px;
+  margin: 8px 0 15px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.price small {
+  font-size: 10px;
+  color: #777;
+}
+
+.price p {
+  font-size: 11px;
+}
+
+.history {
+  display: flex;
+  align-items: center;
+  background: #eff9f5;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 40px 0;
+}
+
+.history img {
+  width: 50%;
+  height: 330px;
+  object-fit: cover;
+}
+
+.hist-info {
+  padding: 35px;
+}
+
+.hist-info h2 {
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+.hist-info p {
+  color: #777;
+  font-size: 13px;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+
+.hist-info .btn {
+  margin-top: 10px;
+}
+
+.faq {
+  display: flex;
+  gap: 35px;
+  padding: 45px 0;
+}
+
+.faq-title {
+  width: 40%;
+}
+
+.faq-title h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.faq-title span {
+  color: #36ad80;
+}
+
+.faq-title p {
+  font-size: 12px;
+  line-height: 19px;
+  color: #888;
+}
+
+.questions {
+  width: 60%;
+}
+
+.question {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  padding: 17px 20px;
+}
+
+.question p {
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.question:nth-child(2) {
+  color: #888;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.about img {
+  width: 350px;
+  height: 350px;
+}
+
+.about-info {
+  width: 55%;
+  background: #eaf7f1;
+  padding: 45px;
+  border-radius: 10px;
+  margin-left: -20px;
+}
+
+.about-info h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.about-info p {
+  font-size: 12px;
+  line-height: 19px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.location {
+  margin: 60px 0;
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.map {
+  height: 420px;
+  background: #e8e8e8;
+  background-image: url("./map.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map h2 {
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.point {
+  position: absolute;
+  left: 65%;
+  top: 35%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #36ad8070;
+  box-shadow: 0 0 0 20px #36ad8030;
+}
+
+.loc-info {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  right: 30px;
+  background: white;
+  padding: 25px 35px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px #0001;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.loc-info h2 {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.loc-info p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #888;
+  max-width: 400px;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+.form input {
+  width: 180px;
+  border: none;
+  outline: none;
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 20px;
+}
+
+.foot {
+  max-width: 1150px;
+  margin: auto;
+  padding: 60px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.foot h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.foot p {
+  color: #777;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.foot-text {
+  max-width: 250px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social img {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 700px) {
+  .content {
+    padding: 20px;
+  }
+
+  .head {
+    padding: 20px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .menu {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 11px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 30px 0 130px;
+    gap: 25px;
+  }
+
+  .pic,
+  .info {
+    width: 100%;
+  }
+
+  .pic {
+    height: 250px;
+  }
+
+  .info h2 {
+    font-size: 23px;
+  }
+
+  .review {
+    left: 0;
+    bottom: 30px;
+    width: 200px;
+  }
+
+  .small {
+    left: auto;
+    right: 0;
+    bottom: 45px;
+  }
+
+  .small img {
+    width: 55px;
+    height: 45px;
+  }
+
+  .top h2 {
+    font-size: 21px;
+  }
+
+  .top p {
+    font-size: 11px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    height: 230px;
+  }
+
+  .history {
+    flex-direction: column;
+  }
+
+  .history img {
+    width: 100%;
+    height: 230px;
+  }
+
+  .hist-info {
+    padding: 25px;
+  }
+
+  .hist-info h2 {
+    font-size: 23px;
+  }
+
+  .faq {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .faq-title,
+  .questions {
+    width: 100%;
+  }
+
+  .faq-title h2 {
+    font-size: 26px;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about-logo,
+  .about-info {
+    width: 100%;
+  }
+
+  .about-logo {
+    height: 220px;
+  }
+
+  .about-info {
+    margin-left: 0;
+    padding: 25px;
+  }
+
+  .location {
+    margin: 40px 0;
+    padding-bottom: 0;
+  }
+
+  .map {
+    height: 300px;
+  }
+
+  .map h2 {
+    font-size: 20px;
+  }
+
+  .loc-info {
+    position: static;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .loc-info h2 {
+    font-size: 20px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form input {
+    width: 100%;
+  }
+
+  .foot {
+    padding: 30px 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .foot-text {
+    width: 100%;
+  }
+}
